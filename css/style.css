@@ -1,0 +1,249 @@
+:root {
+    --primary-color-a: #313131;
+    --primary-color-b: #322f2e;
+    --primary-color-c: #c47344;
+    --primary-color-d: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color-a);
+}
+
+header a {
+    color: var(--primary-color-b);
+    font-size: 14px;
+    font-weight:bold;
+}
+h1 {
+    visibility:hidden;
+}
+
+nav {
+    text-align: right;
+    line-height: 20px;
+}
+footer a {
+    color: var(--primary-color-a);
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(#fff8ef, #fff) ;
+    font-family: "Roboto", sans-serif;
+}
+ 
+.rely{
+    text-align:center;
+}
+
+ .rely_h {
+    color: var(--primary-color-b);
+    font-size: 110px;
+    font-weight: bold;
+    text-align:center;
+    line-height: 119px;
+ }
+
+ .rely_p {
+    color: var(--primary-color-b);
+    font-size: 21px;
+    font-weight: medium;
+    text-align:center;
+    line-height: 33px;
+ }
+
+ .orange_button {
+    color: --primary-color-d;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--primary-color-c);
+    line-height: 20px;
+    
+ } 
+
+ .rely_href {
+    color: #c47344;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+ }
+
+ .cards {
+    background-color: #fffAf2;
+    text-align:center;
+
+ }
+
+ .cards_h {
+    color: var(--primary-color-b);
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 52px;
+ }
+.cards_p {
+    color: var(--primary-color-b);
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 28px;
+}
+
+.cards_button {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.quiz_box {
+    background-color: #32686f;
+}
+
+.quiz_box_h {
+    color: --primary-color-d;
+    font-size: 28px;
+    font-weight: bold;
+    text-align:left;
+    line-height: 32px;
+}
+.quiz_box_p {
+    color: --primary-color-d;
+    font-size: 14px;
+    font-weight: medium;
+    text-align:left;
+    line-height: 20px;
+}
+
+.quiz_h {
+    color: var(--primary-color-b);
+    font-size: 53px;
+    font-weight: bold;
+    text-align:left;
+    line-height: 62px;
+}
+
+.quiz_p {
+    color: var(--primary-color-b);
+    font-size: 21px;
+    font-weight: medium;
+    text-align:left;
+    line-height: 33px;
+}
+
+.gallery {
+    background-color: #fAf7f3;
+    text-align: left;
+}
+.gallery_h {
+    color: #1a1918;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 54px;
+}
+
+.gallery_p{
+    color: var(--primary-color-b);
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 32px;
+}
+
+.gallery_l {
+    color: rgba(0,0,0, 0.45);
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 32px;
+}
+
+.footer_list{
+    color: var(--primary-color-a);
+    font-size: 13px;
+    font-weight: 600;
+    text-align:left;
+    line-height: 20px;
+}
+
+/*.footer_h{
+    color: #313131;
+    font-size: 13px;
+    font-weight: 500;
+}*/
+ 
+.footer_inscrip{
+    color: #d3d3d3;
+    font-size: 13px;
+    font-weight: normal; 
+    text-align:left;
+    line-height: 20px;
+}
+
+
+
+/*.div1 {
+position: absolute;
+height: 349px;
+left: 25.69%;
+right: 25.69%;
+top: 246px;
+
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+
+
+text-align: center;
+}
+
+.green_card {
+    position: absolute;
+    height: 260px;
+    left: -125.45%;
+    right: 125.45%;
+    top: -24.3px;
+
+    background: #32686F;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 33px;
+    /* or 157% */
+/*
+    text-align: center;
+
+    color: #322F2E;
+} 
+*/
+/* button {
+    background: #C47344;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    text-decoration-color: #ffffff;
+
+}
+*/
