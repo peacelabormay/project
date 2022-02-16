@@ -13,28 +13,28 @@
         <title>arcarta</title>
     </head>
     <body>
-        <header>
-            <img src="img/logo.svg" alt="logo">
-            
-            <nav>
-                <ul class="menu">
+        <header class="nav-container">
+            <div class="nav-container-left">
+                <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="nav-container-right">
+                <ul>
                     <li><a href="#">What is arcarta?</a></li>
                     <li><a href="#">Solutions</a></li>
                     <li><a href="#">Resourses</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Login</a></li>
-                    <li><a href="#" class="nav-orange">Get Started</a></li>
+                    <li class="nav-orange"><a href="#">Get Started</a></li>
                 </ul>
-            </nav>
-            
+            </nav>   
         </header>
         <main>
             <h1>arcarta</h1>
-            <section>
+            <section class="cont-rely">
                 <h2>section 1</h2>
                 <div class="rely">
-                    <div>
+                    <div class="pink_span">
                         <span>New</span>
                         <span>The Art Market Report</span>
                     </div>
@@ -42,7 +42,7 @@
                     <p>Our Customer Due Diligence platform helps you avoid fines or losing clients due to AML while protecting you from cybercrime.</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
+                <div class="brands">
                     <ul>
                         <li><img src="img/colnaghi.png" alt=""></li>
                         <li><img src="img/luxembourg.png" alt=""></li>
@@ -51,10 +51,10 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="#" class="rely_href">What is arcarta?<img src="img/arrow.png" alt=""></a>
+                    <a href="#" class="rely_href">What is arcarta?<img src="img/arrow.svg" alt=""></a>
                 </div>
             </section>
-            <section>
+            <section class="big_picture">
                 <h2>section 2</h2>
                 <img src="img/gallery.svg" alt="">
             </section>
@@ -85,15 +85,14 @@
                     <a href="#">Learn More</a>
                 </div>
             </section>
-            <section>
+            <section class="quiz">
                 <h2>section 4</h2>
                 <div class="quiz-box">
                     <p>01</p>
                     <img src="img/laptop.png" alt="">
                     <h3>Compliance Quiz</h3>
-                    <hr>
-                    <p>Begin</p>
-                    <img src="img/whitearrow.svg" alt="">
+                    <a href='#' class="line">Begin<img src="img/whitearrow.svg" alt=""></a>
+                    
                 </div>               
                 <div class="near-quiz">
                     <span>New</span>
@@ -102,22 +101,21 @@
                     <a href="#">Take the Quiz</a>
                 </div>
             </section>
-            <section>
+            <section class="main-gallery">
                 <h2>section 5</h2>
                 <div class= "gallery">
                     <img src = "img/twopeople.svg" alt = "">
                     <h3>Art world insight.</h3>
                     <p>Receive our newsletter direct to your inbox to follow updates to legistation and the EU art-market's responce.</p>
                     <form>
-                        <input type = "email" id = "email">
-                        <label for = "email">Your email</label>
+                        <input type = "email" id = "email" placeholder="Your email">
                         <img src = "img/arrowform.svg" alt = "">
-                    </form>
+                    </form> 
                 </div>
             </section>
         </main>
         <footer>
-            <div>
+            <div class="info">
                 <div>
                     <img src = "img/logo.svg" alt = "">
                     <p class="footer_list">Our Customer Due Diligence platform helps you avoid fines or losung clients due to AML while protecting you from cybercrime.</p>
@@ -133,16 +131,7 @@
                     <p>© Arc-Pay Ltd 2021</p>
                 </div>
             </div>
-            <div>
-                <img src = "img/people.png" alt = "">
-                <ul>
-                    <li><a href = "#" class="footer_inscrip">Privacy & Terms</a></li>
-                    <li><a href = "#"><img src = "img/icon_twitter.svg" alt = ""></a></li>
-                    <li><a href = "#"><img src = "img/icon_instagram.svg" alt = ""></a></li>
-                    <li><a href = "#"><img src = "img/icon_youtube.svg" alt = ""></a></li>
-                </ul>    
-            </div>
-            <div>
+            <div class="columns-list">
                 <ul >
                     <li class="footer_h">Links</li>
                     <li><a href = "">Home</a></li>
@@ -178,6 +167,15 @@
                         <span class="pink">New</span>
                     </li>
                 </ul>
+            </div>
+            <div class="social">
+                <img src = "img/people.png" alt = "" class="pict-people">
+                <ul>
+                    <li><a href = "#" class="footer_inscrip">Privacy & Terms</a></li>
+                    <li><a href = "#"><img src = "img/icon_twitter.svg" alt = ""></a></li>
+                    <li><a href = "#"><img src = "img/icon_instagram.svg" alt = ""></a></li>
+                    <li><a href = "#"><img src = "img/icon_youtube.svg" alt = ""></a></li>
+                </ul>    
             </div>
         </footer>  
     </body>
