@@ -536,7 +536,7 @@ form[name=contact] > button:hover{
 form[name=contact] > button:active{
     background-color: hsl(22, 37%, 62%);
     color: var(--primary-color-d);
-    box-shadow:  20px 20px #e1ded9;
+    box-shadow:  5px 5px #e1ded9;
 }
 
 form[name=contact] > button:focus{
@@ -581,7 +581,7 @@ input:required {
 .nav-orange:active, .rely a:active, .cards a:active, .near-quiz a:active {
     background-color: hsl(22, 37%, 62%);
     color: var(--primary-color-d);
-    box-shadow:  20px 20px #e1ded9;
+    box-shadow:  5px 5px #e1ded9;
 }
 
 .nav-orange:focus, .rely a:focus {
