@@ -37,29 +37,84 @@
                 <label>Имя<input type="text" name="text-field" placeholder="Ваше имя" required></label>
                 <label>Дата рождения<input type="date" name="date"></label>
                 <select name="sex" required>
-                    <option value="1" selected>М</option>
+                    <option value="">Пол</option>
+                    <option value="1">М</option>
                     <option value="2">Ж</option>
                 </select>
                 <label for="password">Пароль<input type="password" name="password" id="password" value="password" required></label>
             </fieldset>
-            <fieldset>
+            <fieldset >
                 <legend>Контактные данные</legend>
                 <label>email<input type="email" name="email" placeholder="ivanov@mail.ru" required></label>
                 <label>tel<input type="tel" name="tel" placeholder="+79999999999" required></label>
-                <label> Когда с вами связаться?
+                
+                <fieldset class="day">
+                    <legend>Когда с вами связаться?</legend>
+                    <label><input type="checkbox" name="checked1" value="1"><span class="input-text">Утро</span></label>
+                    <label><input type="checkbox" name="checked2" value="2"><span class="input-text">День</span></label>
+                    <label><input type="checkbox" name="checked3" value="3"><span class="input-text">Вечер</span></label>
+                    <label><input type="checkbox" name="checked4" value="4"><span class="input-text">Ночь</span></label>
+                </fieldset>
+                <!-- <label> Когда с вами связаться?
                     <select name="time" required>
                         <option value="1">Утро</option>
                         <option value="2" selected>День</option>
                         <option value="3">Вечер</option>
                         <option value="4">Ночь</option>
                     </select>
-                </label>
+                </label>-->
             </fieldset>
+            
             <button type="submit"><i class="fa fa-send"></i> Отправить</button>
-            <button type="reset"><i class="fa fa-trash"></i> Очистить</button>
+            <button type="reset" disabled><i class="fa fa-trash"></i> Очистить</button>
+           
+        </form>
+
+        <form  style="padding-bottom: 25%">
+            <fieldset>
+                <legend>Еще одна форма</legend>
+                <dl>
+                    <dt>Псевдоэлемент</dt>
+                    <dd>Элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS.</dd>
+                    <dt>Псевдокласс</dt>
+                    <dd>Особый вид селектора, который уточняет тип или состояние.</dd>
+                </dl>
+
+                <ul class="ps_elements">
+                    <li><label><input type="checkbox" name="check" value="1" checked><span class="ps_elem">::before</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="2"><span class="ps_elem">::after</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="3"><span class="ps_elem">::first-line</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="4" checked><span class="ps_elem">::first-letter</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="5" checked><span class="ps_elem">::selection</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="6" checked><span class="ps_elem">::placeholder</span>
+                    </label></li>
+                </ul>
+
+                <ul class="ps_classes">
+                    <li><label><input type="checkbox" name="check" value="1" checked><span class="ps_class">:active</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="2" checked><span class="ps_class">:hover</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="3" checked><span class="ps_class">:focus</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="4"><span class="ps_class">:visited</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="5" checked><span class="ps_class">:disabled</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="6" checked><span class="ps_class">:checked</span>
+                    </label></li>
+                    <li><label><input type="checkbox" name="check" value="7"><span class="ps_class">:lang</span>
+                    </label></li>
+                </ul>
+            </fieldset>
         </form>
     </main>
-    <footer style="position: fixed; top: 70%">
+    <footer style="position: fixed; top: 85%">
             <div class="social">
                 <img src = "img/people.png" alt = "" class="pict-people">
                 <ul>

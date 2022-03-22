@@ -93,6 +93,7 @@ nav li a {
 }
 
 .nav-orange {
+    
     box-sizing: border-box;
     min-height: 47px;
     /*width: 129px;*/
@@ -100,16 +101,15 @@ nav li a {
     text-align: center;
     vertical-align: middle;
     border-radius: 50px;
-    
+    color: var(--primary-color-d);
     padding: 14px 28px;
+    
 }
 
 .nav-orange a {
     color: var(--primary-color-d);
     padding-top: 9px;
 }
-
-
 
 h1 + section {
     text-align: center;
@@ -366,6 +366,7 @@ h1 + section {
     background-color: #f2efe9;
     min-height: 413px;
     padding: 45px;
+    margin-bottom: 10%;
 }
 
 .gallery h3 {
@@ -373,7 +374,6 @@ h1 + section {
     line-height: 135%;
     font-weight: 700;
     color: #1A1918;
-
     margin: 24px 0px;
 }
 
@@ -402,29 +402,28 @@ form > input {
     background: #fff;
 }
 
-form > img {
+form > a > img {
     position: relative;
     right: 40px;
     top: 8px;
 }
 
-.gallery img:nth-child(1) {
+.pic_twopeople {
     float: left;
     margin-right: 51px;
 }
 
 footer {
-    margin: 145px 8% 0;
+    /*margin: 145px 8% 0;*/
+    min-width: 100%;
+    padding: 0 8% 5%;
 }
 
 .footer_container
 {   
-
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 80px;
     justify-content: space-between;
-
 }
 
 .footer_list {
@@ -459,10 +458,13 @@ footer, footer ul a {
 
 .columns-list  {
     display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 .columns-list ul {
     display: inline-block;
+    padding-left: 14%;
 }
 
 .pink {
@@ -482,7 +484,7 @@ footer, footer ul a {
 .social ul {
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 3% 0 0;
 }
 
 .social ul li {
@@ -490,3 +492,150 @@ footer, footer ul a {
     margin: 0;
     padding: 0;
 }
+
+
+fieldset {
+    width: 70%;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input, select {
+    border: none;
+    padding: 11px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #e1ded9;
+    background: #fff;
+    color: var(--primary-color-b);
+}
+
+form[name=contact] > button {
+    font-size: 15px;
+    line-height: 133%;
+    color: #000;
+    border: 2px solid #e1ded9;
+    width: 70%;
+    padding: 14px 20px;
+    margin: 5px 15%;
+    border-radius: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+
+form[name=contact] > button:hover{
+    background-color: var(--primary-color-c);
+    color: var(--primary-color-d);
+}
+
+form[name=contact] > button:active{
+    background-color: hsl(22, 37%, 62%);
+    color: var(--primary-color-d);
+    box-shadow:  20px 20px #e1ded9;
+}
+
+form[name=contact] > button:focus{
+    outline-offset: 5px;
+    outline: solid #FAEBD7;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+input::placeholder {
+    color: hsl(22, 84%, 23%);
+}
+
+input:required {
+    border:2px solid hsl(22, 84%, 23%);
+}
+
+.day {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    margin: 0 20px;
+}
+
+::selection {
+    background-color: hsl(22, 45%, 86%);
+}
+
+.nav-container-right a:hover, .columns-list a:hover {
+    color: hsl(22, 52%, 52%);
+}
+
+.nav-orange:hover, .rely a:hover{
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #e1ded9;
+}
+
+.nav-orange:active, .rely a:active, .cards a:active, .near-quiz a:active {
+    background-color: hsl(22, 37%, 62%);
+    color: var(--primary-color-d);
+    box-shadow:  20px 20px #e1ded9;
+}
+
+.nav-orange:focus, .rely a:focus {
+    outline-offset: 5px;
+    outline: solid #FAEBD7;
+}
+
+.rely_href:hover{
+    color: #000;
+}
+
+.cards a:hover, .near-quiz a:hover{
+    color: var(--primary-color-d);
+    background-color: var(--primary-color-c);
+}
+
+input[type="checkbox"]:checked ~ .input-text {
+    color: var(--selection);
+    text-shadow: 0 0 2px black;
+}
+
+dt::first-letter {
+    font-size: 2em;
+}
+
+dd::before {
+    content: "\1F6C8";
+}
+
+input[type="checkbox"]:checked ~ .ps_elem {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ .ps_class {
+    text-decoration: line-through;
+}
+
+
+.ps_elements li:nth-child(2n+1) {
+    color: blue;
+    font-weight: 700;
+}
+
+.ps_elements li:nth-child(2n) {
+    color: red;
+  }
+
+.ps_classes li:nth-child(2n+1) {
+    font-style: italic;
+    color: green;
+}
+
+.ps_classes li:nth-child(2n) {
+    color: orange;
+  }
+
+
